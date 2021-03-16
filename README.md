@@ -21,7 +21,7 @@ g1.add_node(2)
 g1.add_node(3)
 ```
 
-#### 여러개의 노드를 한번에 추가
+### 여러개의 노드를 한번에 추가
 ```python
 g1.add_nodes_from([11, 22])
 ```
@@ -52,10 +52,15 @@ g1.remove_edge(1,22)
 
 ### 그래프 그리기
 ```python
-nx.draw(g1, with_labels = True, font_weight = "bold")
+nx.draw(g1, with_labels = True)
 plt.show()
 ```
+###### with_labels 는 폰트 유무에 관한 것이다 False로 작성시 동그란 node만 보인다.
 
+
+### 실행 
+
+![image](https://user-images.githubusercontent.com/73538957/111277713-187f6180-867c-11eb-8793-257f2b0da41f.png)
 
 
 
