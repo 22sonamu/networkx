@@ -42,7 +42,7 @@ g1.add_edge(1, 22)
 
 ### 여러개의 엣지를 한번에 추가
 ```python
-g1.add_edges_from([(1,2),(2,3),("a",22)])
+g1.add_edges_from([(1,2),(1,3))
 ```
 
 ### 엣지 제거
@@ -60,7 +60,8 @@ plt.show()
 
 ### 실행 
 
-![image](https://user-images.githubusercontent.com/73538957/111277713-187f6180-867c-11eb-8793-257f2b0da41f.png)
+![image](https://user-images.githubusercontent.com/73538957/111279168-c5a6a980-867d-11eb-9022-83aecd0faeb9.png)
+
 
 
 
