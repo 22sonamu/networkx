@@ -65,6 +65,35 @@ plt.show()
 
 
 
+### edge 갯수 에 따른 node 사이즈 설정
+
+###### 그래프 degree(정도) 정보가 담긴 딕셔너리를 만든다.
+```python
+d = dict(g1.degree)
+````
+
+```python
+print(d)
+```
+
+```
+>>{'a': 1, 1: 3, 2: 1, 11: 1, 22: 0}
+```
+
+###### 'a'의 node 에는 1개, 1의 node 에는 3개, 2의 node에는 1개 , 11의 node에는 1개, 22의 node에는 0개의 edge가 존재한다는 뜻이다.
+
+```python
+nx.draw(g1, nodelist = d.keys(), node_size = [v*100 for v in d.values()], with_labels = True)
+```
+
+###### d에서 key값을 nodelist에 , node 사이즈는 v에 d의 values값을 차례로 받아오면서
+###### values값이 클수록 ( edge 가 많을수록 ) node 사이즈를 크게 만든다.
+###### a node 는 100, 1 node 는 300,  node 는 100, 11 node 는 100, 22node 는 0 의 사이즈를 가질 것이다.
+
+```python
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/73538957/111281113-ed970c80-867f-11eb-9345-0765c2d34c90.png)
 
 
 
